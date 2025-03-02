@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-pdf_folder = os.getenv('PDF_FOLDER')  # Folder containing PDFs
-output_file = os.getenv('OUTPUT_FILE')  # Final CSV file path
-pdf_password = os.getenv('PDF_PASSWORD')  # Password for PDFs (if needed)
+pdf_folder = os.getenv('PDF_FOLDER')  
+output_file = os.getenv('OUTPUT_FILE')  
+pdf_password = os.getenv('PDF_PASSWORD')
 
 
 def process_pdf(pdf_path, pdf_password=None):
