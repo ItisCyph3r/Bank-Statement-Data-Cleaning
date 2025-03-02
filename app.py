@@ -21,7 +21,7 @@ def process_pdf(pdf_path, pdf_password=None):
                 data.extend(table)
 
     if not data:
-        print(f"⚠️ No data extracted from {pdf_path}")
+        print(f"No data extracted from {pdf_path}")
         return None
 
     
@@ -74,6 +74,6 @@ for pdf_file in pdf_files:
 if all_data:
     final_df = pd.concat(all_data, ignore_index=True)
     final_df.to_csv(output_file, index=False)
-    print(f"📊 All PDFs processed! Final file: {output_file}")
+    print(f"All PDFs processed! Final file: {output_file}")
 else:
-    print("⚠️ No valid data found in PDFs!")
+    print("No valid data found in PDFs!")
